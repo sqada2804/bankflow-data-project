@@ -1,0 +1,24 @@
+[project]
+name = "bankflow-data-platform"
+version = "0.1.0"
+description = "Learning-oriented banking data engineering platform"
+requires-python = ">=3.12"
+
+dependencies = [
+    "psycopg[binary]>=3.2",
+    "python-dotenv>=1.0",
+    "faker>=30.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
