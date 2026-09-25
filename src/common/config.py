@@ -17,4 +17,4 @@ class Settings:
     DATA_SCALE = os.getenv("DATA_SCALE", "small")
     RANDOM_SEED = int(os.getenv("RANDOM_SEED", "42"))
 
-sett = Settings();
+sett = Settings()
